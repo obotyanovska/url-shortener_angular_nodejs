@@ -1,27 +1,27 @@
 <div class="dialogBox">
   <h1 class="dialogBox__title">URL Shortener</h1>
 
-  <form 
-    (ngSubmit)="onSubmit(inputControl.value)"
+  <form
+    (ngSubmit)="onSubmit(inputValue)"
     class="dialogBox__inputForm">
-    
-    <mat-form-field  
-      appearance="fill" 
+
+    <mat-form-field
+      appearance="fill"
       class="inputField">
-      <mat-label class="inputField__label"> 
+      <mat-label class="inputField__label">
         Enter long URL
       </mat-label>
-      <textarea 
-        name="input" 
-        matInput 
+      <textarea
+        name="input"
+        matInput
         [formControl]='inputControl'
         value
         class="inputField__input">
       </textarea>
   </mat-form-field>
 
-    <button 
-      mat-stroked-button 
+    <button
+      mat-stroked-button
       class="dialogBox__btnSubmit">Get short URL
     </button>
   </form>

@@ -11,6 +11,7 @@ export class DialogBoxComponent {
 
   public inputControl: FormControl = new FormControl();
   public shortUrl: string = '';
+  public inputValue: string = this.inputControl.value;
 
   constructor(
     private httpService: HttpService
