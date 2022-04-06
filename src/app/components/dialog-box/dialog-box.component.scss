@@ -1,0 +1,48 @@
+@import './../../../scss/variables.scss';
+
+.dialogBox { 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+
+  &__title {
+    display: inline-block;
+    margin-bottom: 50px;
+  }
+
+  &__inputForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 35px;
+  }
+ 
+  &__btnSubmit {
+    padding: 0 20px;
+    min-width: 100px;
+  } 
+
+  .inputField {
+    width: 800px; 
+    text-align: center;
+    &__input { 
+      height: 100px;
+      resize: none;
+    }
+  }
+  
+  .outputField {  
+    width: 500px;
+    height:20px;
+    padding: 10px 20px;
+    background-color: $fieldBackgroundColor;
+    text-align: center;
+  }
+}
+
+::ng-deep .mat-form-field-underline {
+  height: 1px;
+}
+

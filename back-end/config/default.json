@@ -1,0 +1,4 @@
+{
+  "mongoURI": "mongodb+srv://qwe123:qwe123@cluster0.kmi0u.mongodb.net/url-shortener?retryWrites=true&w=majority",
+  "baseUrl": "https://url-shortener-back.herokuapp.com/"
+}
